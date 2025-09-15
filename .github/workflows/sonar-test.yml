@@ -26,8 +26,8 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@v2
         with:
           args: >
-            -Dsonar.projectKey=${{ github.repository }}
-            -Dsonar.projectName="${{ github.repository }}"
+            -Dsonar.projectKey=mathisrp_flask_projet_sqlite
+            -Dsonar.projectName="Flask Projet SQLite"
             -Dsonar.host.url=http://ec2-13-37-232-203.eu-west-3.compute.amazonaws.com:9000
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
